@@ -6,4 +6,4 @@
 #SBATCH --gres=gpu:2
 
 # Run the Python script
-python sample-manygpus.py
+python sample-allgpus.py
