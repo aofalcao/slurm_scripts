@@ -20,7 +20,7 @@ SLURM scripts, examples and tutorial for executing code with the Computing Resou
 echo "Job running on node: $(hostname)"
 ```
 
-2. execute the script with `sbatch test1.sh`
+2. execute the script with `sbatch test1.sh` which will execute the job on the `compute` node and will redirect stdout to `slurm_outputs/output.txt`
 3. Check if the slurm_outputs in your home directory was created and the `output.txt` has the hostname of the compute node
 
 ### Test 2 - Testing and running Python code
