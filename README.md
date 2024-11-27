@@ -52,7 +52,11 @@ Now within this environment you may be able to run your code on any compute node
 
 1. Login into the login node
 2. Use the `test3.sh` file on this shell folder
-3. Create the `test1.py` file (from this repo Python folder)
-4. make sure the the `torch-env`  conda environment is activated as on point 5. above.
-5. check the output and verify if the code worked by printing that CUDA is available and printing a random tensor
+3. Create the `torchtest.py` file (from this repo Python folder)
+4. make sure the the `torch-env`  conda environment is activated as on point 5. above
+5. execute `sbatch test3.sh`
+6. check the output and verify if the code worked by printing that CUDA is available and printing a random tensor
 
+### checking the state of the GPUs
+
+We can check the state of the GPUs with the command `nvidia-smi`, but to be executed on the server it needs to be executed through sbatch. So it is required that the script check-gpus.sh (in this repo) is created and directly executed through `sbatch check-gpus.sh`. The output will be in your slurm_outputs folder
