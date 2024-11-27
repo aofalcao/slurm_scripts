@@ -38,7 +38,7 @@ This second test will allow you to check how to create and process data that is 
 This tutorial used pytorch under miniconda. Other libraries might be used but they were not tested
 
 1. download miniconda by running the following code
-`curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+`curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 2. Install it by running `bash ~/Miniconda3-latest-Linux-x86_64.sh`
 3. Restart the terminal
 4. [optional but recommended] create a new conda environment with
