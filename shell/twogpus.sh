@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=simple-job
-#SBATCH --output=/mnt/storage/admindi/home/rgoncalves/slurm_outputs/output.txt
+#SBATCH --output=/mnt/storage/admindi/home/USERNAME/slurm_outputs/output.txt
 #SBATCH --ntasks=1
 #SBATCH --partition=compute
 #SBATCH --gres=gpu:2
