@@ -23,7 +23,7 @@ echo "Job running on node: $(hostname)"
 2. execute the script with `sbatch test1.sh` which will execute the job on the `compute` node and will redirect stdout to `slurm_outputs/output.txt`
 3. Check if the slurm_outputs in your home directory was created and the `output.txt` has the hostname of the compute node
 
-### 2.1. Specifying the computing node
+#### 1.1. Specifying the computing node
 
 The 2 machines publicly available for general usage are:
 *  `opel`  with 2 Nvidia T4 with 16 GB each
