@@ -23,6 +23,25 @@ echo "Job running on node: $(hostname)"
 2. execute the script with `sbatch test1.sh` which will execute the job on the `compute` node and will redirect stdout to `slurm_outputs/output.txt`
 3. Check if the slurm_outputs in your home directory was created and the `output.txt` has the hostname of the compute node
 
+### 2.1. Specifying the computing node
+
+The 2 machines publicly available for general usage are:
+*  `opel` - with 2 Nvidia T4 with 16 GB each
+*  `corsa`  with 6 Nvidia A30 with 24 GB each
+
+if you do not do anything, SLURM will load balance and pick one for you. If you want to directly specify your machine, do it with the `--nodelist` directive. As an example the next code will run on the `opel` machine
+
+#!/bin/bash
+#SBATCH --job-name=simple-job
+#SBATCH --nodelist=opel
+#SBATCH --output=/mnt/storage/admindi/home/USERNAME/slurm_outputs/output.txt
+#SBATCH --ntasks=1
+#SBATCH --time=00:01:00
+#SBATCH --partition=compute
+
+echo "Job running on node: $(hostname)"
+
+
 ### Test 2 - Testing and running Python code
 
 This second test will allow you to check how to create and process data that is in your personal storage
